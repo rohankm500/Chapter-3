@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class U3_L4_Activity_Three{
+  public static void main(String[] args){
+    
+    Scanner scan = new Scanner (System.in);
+    
+    System.out.println("Enter the first octet");
+    int x = scan.nextInt();
+    System.out.println("Enter the second octet");
+    int y = scan.nextInt();
+    System.out.println("Enter the third octet");
+    int z = scan.nextInt();
+    System.out.println("Enter the fourth octet");
+    int w = scan.nextInt();
+    int a = new Integer(0);
+    
+    if (!(x <=255 && x >=0)){
+      System.out.println("Octet 1 is incorrect");
+    } else {
+      a++ ;
+    }
+    if (!(y <=255 && y >=0)){
+      System.out.println("Octet 2 is incorrect");
+    } else {
+      a++ ;
+    }
+    if (!(z <=255 && z >=0)){
+      System.out.println("Octet 3 is incorrect");
+    } else {
+      a++ ;
+    }
+    if (!(w <=255 && w >=0)){
+      System.out.println("Octet 4 is incorrect");
+    } else {
+      a++ ;
+    }
+    if(a==4) {
+      System.out.println(x+"."+y+"."+z+"."+w);
+    }
+    
+  }
+}
