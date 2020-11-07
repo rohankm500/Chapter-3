@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import edhesive.shapes.*;
+
+public class U3_L7_Activity_Three{
+  public static void main(String[] args){
+
+    Scanner scan = new Scanner(System.in);  
+   
+   System.out.println("Enter length:");
+   double a = scan.nextDouble();
+   System.out.println("Enter 2 lengths:");
+   double b = scan.nextDouble();
+   double c = scan.nextDouble();
+   
+   Rectangle x1 = new Rectangle(a);
+   Rectangle x2 = new Rectangle(b,c);
+
+  if (x1.equals(x2))
+  {
+    System.out.println("Congruent Rectangles");
+  }
+  else
+  {
+    System.out.println("Different Rectangles");
+  }    
+
+  }
+}
