@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class Assignment3 {
+
+  public static void main (String args[]) {
+
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Welcome. What is your name?");
+    String name = scan.nextLine();
+    System.out.println("Hello " + name + ". Are you ready to crack the code?");
+    String name2 = scan.nextLine();
+    String name2LowerCase = name2.toLowerCase();
+    String name3 = "yes";
+
+    
+    if (name2LowerCase.equals(name3)){
+    /*Phase 1*/
+    System.out.println("\n");
+    System.out.println("PHASE 1:");
+    System.out.println("Enter a number:");
+    int num1 = scan.nextInt();
+    if (!(num1 == 3)){
+      System.out.println("Sorry, that was incorrect!" + "\n" + "Better luck next time!");
+    }else{
+      /*Phase 2*/
+    System.out.println("Correct!");
+    System.out.println("\n");
+    System.out.println("PHASE 2:");
+    System.out.println("Enter a number:");
+    int num2 = scan.nextInt();
+        if (!(num2 == 1 || (num2>=33 && num2<=100))){
+          System.out.println("Sorry, that was incorrect!" + "\n" + "Better luck next time!");
+        }else{
+          /*Phase 3 */
+          System.out.println("Correct!");
+          System.out.println("\n");
+          System.out.println("PHASE 3:");
+          System.out.println("Enter a number:");
+          int num3 = scan.nextInt();
+            if (!((num3 >=0) && ((num3 %7==0) || (num3 %3 == 0)))){
+              System.out.println("Sorry, that was incorrect!" + "\n" + "Better luck next time!");
+            }else{
+              System.out.println("Correct!" + "\n" + "You have cracked the code!");
+              
+            }
+        }
+    }
+    
+    }
+   
+  }
+
+}
