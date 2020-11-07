@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class U3_L7_Activity_One{
+  public static void main(String[] args){
+   Scanner scan = new Scanner(System.in);  
+   String s1 = "swordfish";
+   System.out.println("Enter Password:");
+   String s2 = scan.nextLine();
+  if (s1.equals(s2))
+  {
+    System.out.println("Access granted!");
+  }
+  else
+  {
+    System.out.println("Access denied!");
+  }
+  }
+}
