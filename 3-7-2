@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class U3_L7_Activity_Two{
+  public static void main(String[] args){
+    
+ Scanner scan = new Scanner(System.in);  
+   
+   System.out.println("Enter 2 strings:");
+   String s1 = scan.nextLine();
+   String s2 = scan.nextLine();
+   String a1 = s1.substring(0, s1.length() - 1);
+   String a2 = s2.substring(0, s2.length() - 1);
+  if (s1.equals(s2))
+  {
+    System.out.println("Great!");
+  }else if (s1.length() == s2.length() && a1.equals(a2)){
+    System.out.println("Close enough");
+  }else
+  {
+    System.out.println("Try again");
+  }    
+  }
+}
